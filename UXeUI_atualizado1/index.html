@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema PDV para Restaurante</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <script src="js/storage.js" defer></script>
+    <script src="js/ui.js" defer></script>
+    <script src="js/categories.js" defer></script>
+    <script src="js/products.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/payments.js" defer></script>
+    <script src="js/auth.js" defer></script>
+    <script src="js/reports.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/tests.js" defer></script>
+    <script src="js/stock.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProducts();
+            loadCart();
+            loadOrders();
+            runTests();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1 data-i18n="order_history">Sistema PDV para Restaurante</h1>
+        <div>
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="pt">Português</option>
+            </select>
+            <button onclick="logout()">Logout</button>
+        </div>
+        <div>
+            <span id="cart-icon">
+                <img src="cart-icon.png" alt="Cart">
+                <span id="cart-badge">0</span>
+            </span>
+        </div>
+    </header>
+    
+    <main>
+        <section id="auth-section">
+            <h2>Login</h2>
+            <form id="login-form" onsubmit="event.preventDefault(); login(document.getElementById('username').value, document.getElementById('password').value);">
+                <label for="username">Username</label>
+                <input type="text" id="username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        
+        <section id="menu-section">
+            <h2>Menu de Produtos</h2>
+            <form id="add-product-form" onsubmit="event.preventDefault(); addProduct();">
+                <label for="product-name">Nome</label>
+                <input type="text" id="product-name" required>
+                <label for="product-price">Preço</label>
+                <input type="number" id="product-price" required>
+                <label for="product-category">Categoria</label>
+                <input type="text" id="product-category" required>
+                <button type="submit">Adicionar Produto</button>
+            </form>
+            <div id="products-grid"></div>
+        </section>
+        
+        <section id="cart-section">
+            <h2>Carrinho de Compras</h2>
+            <div id="cart-items"></div>
+            <div>
+                <span data-i18n="total">Total:</span>
+                <span id="total-amount">0</span>
+            </div>
+            <button onclick="clearCart()">Limpar Carrinho</button>
+            <button onclick="checkout()">Finalizar Compra</button>
+        </section>
+        
+        <section id="payment-section">
+            <h2>Pagamento</h2>
+            <label for="payment-method" data-i18n="payment_method">Método de Pagamento</label>
+            <select id="payment-method">
+                <option value="Dinheiro" data-i18n="cash">Dinheiro</option>
+                <option value="Crédito" data-i18n="credit_card">Cartão de Crédito</option>
+                <option value="Débito" data-i18n="debit_card">Cartão de Débito</option>
+                <option value="Pix" data-i18n="pix">Pix</option>
+            </select>
+            <button onclick="processPayment()">Pagar</button>
+        </section>
+        
+        <section id="reports-section">
+            <h2>Relatórios</h2>
+            <button onclick="generateReport('daily')">Relatório Diário</button>
+            <button onclick="generateReport('monthly')">Relatório Mensal</button>
+            <div id="report-results"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Sistema PDV para Restaurante</p>
+    </footer>
+</body>
+</html>

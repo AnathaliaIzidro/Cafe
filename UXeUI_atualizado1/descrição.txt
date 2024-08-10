@@ -1,0 +1,129 @@
+Utilizando as seguintes tecnologias:
+ - HTML
+ - CSS
+ - Javasccript, JSON
+Lembre-se que esse sistema é para um estabelecimento que tipo restaurante. Portanto separe cada os pedidos por mesa.
+Não permita que que o usuário crie mais de uma mesa com o mesmo número.
+ Tenha como regra respeitar as tecnologias pré determinadas e utiliza as recomendação
+de material design 3 que tem foco em UX e UI code.
+ Atue como desenvolvedo e crie um desenvolvedor e siga as recomendações.
+Desenvolva um PDV para gerenciar pedidos com HTML, CSS e JavaScript, utilizando LocalStorage. O sistema deve incluir:
+Menu de itens com valores e quantidades.
+- Botão para adicionar ao carrinho com ícone, bordas arredondadas e transparência ao clicar.
+- Área para ver, adicionar e remover itens do carrinho, mostrando o valor total do pedido.
+- Opções de pagamento (Débito, Crédito, Dinheiro, Pix), calculando troco para dinheiro e zerando ao finalizar o pedido.
+- Layout responsivo e intuitivo com cores escuras e tons de verde e azul.
+- Persistência de dados no LocalStorage.
+- Solicitação Simples
+- Desenvolva um sistema de PDV em HTML, CSS e JavaScript com LocalStorage, contendo:
+Menu de itens com valores e quantidades.
+- Botão de adicionar ao carrinho com ícone e bordas arredondadas.
+- Área para ver e editar carrinho, mostrando o valor total.
+- Opções de pagamento com cálculo de troco para dinheiro.
+- Layout responsivo e intuitivo com cores escuras.
+- Entregue o diretório dos arquivos regularmente.
+Também deve conter as seguintes funcinalidades:
+- Adicionar Produto: O formulário no topo da página permite adicionar novos produtos ao menu. Esses produtos são salvos no localStorage para persistência de dados.
+- Editar e Excluir Produto: Botões de edição e exclusão para cada produto no menu, que permitem modificar ou remover produtos.
+- Adicionar ao Carrinho: Botões de adicionar ao carrinho que incrementam a quantidade do produto no carrinho.
+- Ver Carrinho: Um ícone de carrinho no canto superior direito que exibe o conteúdo do carrinho quando clicado, junto com um botão para limpar o carrinho e o valor total do pedido.
+- Remover do Carrinho: Botões para remover itens individualmente do carrinho.
+- Métodos de Pagamento: Dropdown para selecionar o método de pagamento. Para pagamentos em dinheiro, um campo para calcular o troco.
+- Finalizar Pedido: Botão para finalizar o pedido, que limpa o carrinho e reinicia o cálculo do troco.
+Atue como um desenvolvedor com experiência de mercado e com formações na área de UX e UI Design, você foi contratado para desenvolver um PDV de gerenciador de pedidos. 
+Nesse sistema deve conter: 
+- Um menu de itens com os seus valores e permita colocar a quantidade do mesmo produto que o cliente deseja adicionar no carrinho, calcular o preço final baseado na quantidade. 
+- Um botão de adicionar ao carrinho em cada item, o botão deve conter um ícone de carrinho ao lado da palavra adicionar, deve ter um leve arredonda mento nas bordas e alterar a transparência quando o usuário clicar nele. 
+- Uma área para ver o carrinho e deletar ou adicionar novos itens do menu, e mostrar o valor atual do pedido. 
+- Opções de pagamentos (Débito, Crédito, Dinheiro e Pix), caso a opção escolhida seja dinheiro, deve calcular e exibir o valor do troco caso seja necessário, ao finalizar o pedido retorne o valor do troco para zero. Desenvolva isso com as seguintes tecnologias: 
+- HTML 
+- CSS (CSS Avançado com medidas relativas e variáveis) 
+- Javascript , JSON
+- Use LocalStorage para permanência de dados no navegador 
+- Me entregue o Diretório dos Arquivos sempre que tiver atualizações Desenvolva um sistema de PDV (Ponto de Venda) para um estabelecimento comercial usando HTML, CSS e JavaScript. 
+
+O sistema deve ter as seguintes características e funcionalidades: 
+-Design: Use cores escuras com tons de verde e azul para criar um ambiente intuitivo. 
+-O tamanho do sistema deve ser médio, ocupando 80% da largura da tela com um máximo de 1000px. 
+-Use CSS avançado com variáveis para cores e medidas relativas para responsividade. 
+Menu de Produtos: 
+-Exiba um menu de produtos em formato de grid. 
+-Cada item do menu deve mostrar nome, preço e um botão para adicionar ao carrinho utilizando um ícone de carrinho. 
+-Implemente funcionalidades para adicionar, editar e excluir produtos do menu também utilizando ícones equivalentes a cada função, deixe os dois botões do mesmo tamanho, coloque um espaçamento entre eles e os posicione lado a lado, acima do botão de adicionar ao carrinho. 
+-Adicione um formulário no topo da página para adicionar novos produtos ao menu. 
+Carrinho de Compras: 
+-Substitua o nome de carrinho por um ícone e posicione o ícone no canto superior direito da tela. 
+-Adicione uma notificação visual (badge) no ícone do carrinho mostrando o número de itens. 
+-Ao clicar no ícone, abra um menu flutuante mostrando os itens no carrinho. 
+-Permita a remoção de itens do carrinho sem que o menu flutuante feche. 
+-Adicione um botão de fechar o carrinho no menu flutuante utilizando um ícone sem background e com borda da mesma cor do ícone, posicione o botão na parte superior direita. 
+-Adicionar um botão escrito Limpar Carinho, ao clicar nele todos os itens do carrinho deverão ser excluídos. 
+-O carrinho deve fechar ao clicar fora dele. 
+-Após finalizar o pedido solicite o modo de pagamento e após o pagamento encerre os pedidos da mesa e esclua a mesma. para
+Processamento de Pagamento: 
+-Adicione um dropdown para selecionar o método de pagamento (crédito, débito, PIX, dinheiro). 
+-Para pagamentos em dinheiro, adicione uma opção para calcular o troco e mostrar o valor do troco antes de finalizar o pedido, ao iniciar um novo pedido o troco deve voltar a zero. 
+-Persistência de Dados: Use o localStorage para salvar e carregar o estado do carrinho entre sessões. 
+-Use o localStorage para salvar e carregar o menu de produtos, permitindo que as alterações persistam. 
+-Interatividade: Implemente todas as funcionalidades usando JavaScript puro (vanilla JS). 
+-Garanta que todas as ações (adicionar ao carrinho, remover do carrinho, processar pagamento, etc.) atualizem a interface em tempo real. 
+- Certifique-se de que o código seja bem estruturado, com funções separadas para cada funcionalidade principal (ex.: gerenciamento do menu, gerenciamento do carrinho, processamento de pagamento).  
+-O sistema deve ser intuitivo e fácil de usar tanto para o cliente quanto para o gerenciamento do estabelecimento.
+
+Só retorne depois que for solicitado.  Ainda vou enviar outro arquivo.
+
+
+solicitações principais:
+
+Sistema PDV para restaurante
+Tecnologias: HTML, CSS, JavaScript, JSON
+Separação de pedidos por mesa (sem mesas duplicadas)
+Design com cores escuras, tons de verde e azul
+Layout responsivo (80% da largura da tela, máximo 1000px)
+Menu de produtos em formato grid
+Funcionalidades para adicionar, editar e excluir produtos
+mesa de pedidos com ícone e badge
+Opções de pagamento (Débito, Crédito, Dinheiro, Pix)
+Cálculo de troco para pagamentos em dinheiro
+Persistência de dados usando LocalStorage
+Adicionar uma função de busca de produtos no menu.
+Implementar um sistema de categorias para os produtos.
+Adicionar um histórico de pedidos finalizados.
+Melhorar a acessibilidade com foco em teclado e atributos aria.
+Implementar um sistema de notificações para alertas e confirmações.
+Adicionar animações suaves para melhorar a experiência do usuário.
+Implementar um modo claro/escuro.
+Adicionar validação de formulários mais robusta.
+Melhorar o design dos botões e cards com bordas arredondadas.
+Adicionar um recurso de impressão de recibo.
+Incluir traduções em inglês e português
+Gerencia o histórico de pedidos finalizados.
+Acrescente 10% ao gerar a conta.
+
+Descrição dos Arquivos e Pastas
+index.html: A página principal que vai renderizar o PDV.
+css/:
+styles.css: Arquivo principal de estilos.
+dark-mode.css: Estilos adicionais para o modo escuro.
+js/:
+app.js: Arquivo principal que inicializa o aplicativo.
+products.js: Lida com a adição, edição e exclusão de produtos.
+table.js: Gerencia o pedidos das mesas.
+payments.js: Processa os métodos de pagamento e calcula o troco. Também utiliza APIs de pagamento.
+storage.js: Lida com a persistência de dados usando LocalStorage.
+ui.js: Manipula a interface do usuário e as animações.
+categories.js: Gerencia as categorias de produtos.
+orders.js: Gerencia o histórico de pedidos finalizados.
+auth.js: Autenticação de usuários.
+reports.js: Gerar relatórios detalhados diários e mensais.
+i18n.js: Suporte multilíngue. Coloque a opção para alterar entre Inglês e Português Brasil.
+tests.js: Realizar testes automatizados.
+stock.js: Gerenciar estoque do estabelecimento.
+assets/:
+images/: Contém as imagens usadas no projeto.
+icons/: Contém os ícones usados no projeto.
+data/:
+orders.json: Arquivo JSON que contém os dados dos históricos de pedidos.
+products.json: Arquivo JSON que contém os dados dos produtos.
+README.md: Documento com instruções e informações sobre o projeto.
+.gitignore: Arquivo que especifica quais arquivos ou pastas devem ser ignorados pelo Git.
